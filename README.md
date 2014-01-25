@@ -19,12 +19,12 @@ And then execute:
 
 In your application.js:
 
-//= require pen
-//= require markdown
+    //= require pen
+    //= require markdown
 
 In your application.css:
 
-*= require pen
+    *= require pen
 
 
 ## Build the Gem
