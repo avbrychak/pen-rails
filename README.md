@@ -1,25 +1,36 @@
-# Backbone.Validation Gem for Rails
+# Pen::Rails
 
-A wrapper for the [Backbone.Validation](https://github.com/thedersen/backbone.validation) plugin for [Backbone](https://github.com/documentcloud/backbone/)
 
-## Version
-The version of this gem follows that of the associated Backbone.Validation version
+Gem wrapper of <https://github.com/sofish/pen> for Rails assets pipeline
 
-Currently: **v0.8.0**
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'backbone-validation-rails'
+    gem 'pen-rails'
 
 And then execute:
 
-    $ bundle install
+    $ bundle
 
-Or install it yourself as:
 
-    $ gem install backbone-validation-rails
+## Usage
+
+In your application.js:
+
+//= require pen
+//= require markdown
+
+In your application.css:
+
+*= require pen
+
+
+## Build the Gem
+
+- `rake download`
+- `rake build`
 
 ## Contributing
 
