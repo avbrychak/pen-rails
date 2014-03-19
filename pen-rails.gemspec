@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A wrapper for https://github.com/sofish/pen  in the Rails asset pipeline}
   gem.homepage      = "http://www.github.com/oa414/pen-rails"
 
-  gem.files         = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
+  gem.files         = Dir["{lib,app}/**/*"] + ["MIT-LICENSE", "README.md"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
