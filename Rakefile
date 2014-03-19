@@ -19,5 +19,5 @@ task :download do |t|
 end
 
 task :rebuild do |t|
-  `gem uninstall pen-rails; rake build; gem install pkg/pen-rails-0.0.2.gem`
+  `gem uninstall pen-rails; rake build; gem install pkg/pen-rails-0.0.3.gem`
 end
