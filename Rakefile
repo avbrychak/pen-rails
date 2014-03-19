@@ -6,17 +6,18 @@ task :download do |t|
   `wget https://raw.github.com/sofish/pen/master/src/font/fontello.eot`
   `wget https://raw.github.com/sofish/pen/master/src/pen.js`
   `wget https://raw.github.com/sofish/pen/master/src/markdown.js `
-  `wget https://github.com/sofish/pen/blob/master/src/pen.css`
+  `wget https://raw.github.com/sofish/pen/master/src/pen.css`
 
-  `mkdir -p vendor/assets/fonts vendor/assets/stylesheets vendor/assets/javascripts`
 
-  `mv font* vendor/assets/fonts`
-  `mv *.js vendor/assets/javascripts`
-  `mv *.css vendor/assets/stylesheets`     
+  `mkdir -p app/assets/fonts app/assets/stylesheets app/assets/javascripts`
+
+  `mv font* app/assets/fonts`
+  `mv *.js app/assets/javascripts`
+  `mv *.css app/assets/stylesheets`     
 
   puts "Done"
 end
 
 task :rebuild do |t|
-  `gem uninstall pen-rails; rake build; gem install pkg/pen-rails-0.0.1.gem`
+  `gem uninstall pen-rails; rake build; gem install pkg/pen-rails-0.0.2.gem`
 end
